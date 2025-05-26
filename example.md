@@ -4,7 +4,7 @@ git add .
 git commit -m "your title"
 git remote add origin YOURGITRES
 git branch -M main
-git push -u origin main
+git push -u origin main (you can use -u to track your branch)
 # Then u can update like THIS
 git add .
 git commit -m "TITLE"
@@ -18,7 +18,7 @@ git checkout -b BRANCHNAME
 # Switch to branch
 git branch
 git switch BRANCHNAME
-# Merge a Branch(you have to switch to main branch first)
+# Merge a Branch (you have to switch to main branch first)
 git checkout main
 git merge BRANCHNAMR
 # Delete branch
