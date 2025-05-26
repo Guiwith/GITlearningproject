@@ -1,6 +1,6 @@
 # Git Command Learning Guide
 
-## 1. Basic Repository Operations
+## Basic Operations
 ```bash
 # Initialize repository
 git init 
@@ -10,10 +10,7 @@ git add .
 
 # Commit changes
 git commit -m "your title"
-```
 
-## 2. Remote Repository Operations
-```bash
 # Add remote repository
 git remote add origin YOURGITRES
 
@@ -29,7 +26,7 @@ git commit -m "TITLE"
 git push
 ```
 
-## 3. Proxy Settings
+## Proxy Settings
 ```bash
 # If your IDE outputs a 433 error or cannot connect to GitHub
 # TRY THIS COMMAND (this will change proxy to your VPN)
@@ -37,15 +34,13 @@ git config --global http.proxy http://127.0.0.1:7890
 git config --global https.proxy http://127.0.0.1:7890
 ```
 
-## 4. Branch Management
+## Branch Operations
 ```bash
 # Make a branch
 git checkout -b BRANCHNAME
 
 # Switch to branch
 git branch
-
-# Switch branch
 git switch BRANCHNAME
 
 # Merge a Branch (you have to switch to main branch first)
@@ -57,7 +52,7 @@ git branch -d BRANCHNAME    # LOCAL
 git push origin --delete BRANCHNAME    # REMOTE
 ```
 
-## 5. Version Control
+## Version Control
 ```bash
 # Check update log
 git log
@@ -69,7 +64,7 @@ git restore .
 git reset --hard ID
 ```
 
-## 6. Stash Operations
+## Stash Operations
 ```bash
 # Stash (you can store your unfinished branch here)
 git stash list 
@@ -83,7 +78,7 @@ git stash apply  # This will not delete stash
 git stash drop
 ```
 
-## 7. Rebase Operations
+## Rebase Operations
 ```bash
 # Rebase (make your push as one line, DO NOT USE IT IN TEAM WORK)
 git rebase main
