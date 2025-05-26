@@ -30,3 +30,13 @@ git log
 git restore .
 # Get back to old version
 git reset --hard ID
+# Stash (your can store your unfinished branch here)
+git stash list 
+git stash
+# Back to your job
+git stash pop (This will delete stash)
+git stash apply (This not)
+# Or delete it 
+git stash drop
+# Rebase (make your push as one line,DONOT USE IT IN TEAM WORK)
+git rebase main
